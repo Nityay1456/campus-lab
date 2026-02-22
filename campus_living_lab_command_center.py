@@ -202,7 +202,7 @@ st.markdown("### 🗺️ Campus Traffic Map")
 plt.rcParams["figure.facecolor"] = "#0e1117"
 plt.rcParams["axes.facecolor"] = "#0e1117"
 
-campus_map = Image.open("campus_map.png")
+campus_map = Image.open("new map.jpg.jpeg")
 fig, ax = plt.subplots(figsize=(14, 9))
 ax.imshow(campus_map)
 ax.axis("off")
@@ -232,3 +232,4 @@ st.markdown("**Legend:** 🟢 Low 🟡 Medium 🔴 High")
 if auto_refresh:
     time.sleep(refresh_interval)
     st.rerun()
+
