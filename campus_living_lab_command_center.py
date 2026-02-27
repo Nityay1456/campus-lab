@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ================== POWER BI DARK THEME ==================
+# ================== DARK THEME ==================
 st.markdown("""
 <style>
 .stApp { background-color: #0e1117; color: #e6e6e6; }
@@ -67,7 +67,7 @@ def login_page():
     col1, col2, col3 = st.columns([1, 1.2, 1])
     with col2:
         st.markdown("## 🧭 Campus Living Lab AI")
-        st.caption("Power BI–Style Campus Traffic Dashboard")
+        st.caption(" Campus Traffic Dashboard")
 
         username = st.text_input("Username")
         password = st.text_input("Password", type="password")
@@ -156,7 +156,7 @@ def ai_recommendation(level, trend, zone):
 
 # ================== HEADER ==================
 st.markdown("# 🧭 Campus Living Lab AI")
-st.caption("Power BI–Style Campus Traffic Monitoring")
+st.caption(" Campus Traffic Monitoring")
 st.divider()
 
 # ================== DATA ==================
@@ -232,4 +232,5 @@ st.markdown("**Legend:** 🟢 Low 🟡 Medium 🔴 High")
 if auto_refresh:
     time.sleep(refresh_interval)
     st.rerun()
+
 
