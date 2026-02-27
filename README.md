@@ -1,1 +1,1 @@
-# campus-lab
+# campus living lab ai
